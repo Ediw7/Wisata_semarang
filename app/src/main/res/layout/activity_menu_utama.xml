@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/putih"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:weightSum="10">
+
+
+                <ImageView
+                    android:id="@+id/foto_profil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fotoprofil" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/textGrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="WISATA SEMARANG"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <GridLayout
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="742dp"
+                    android:layout_weight="8"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:padding="14dp"
+                    android:rowCount="3"
+                    android:background="#FFFFFF">
+
+                    <!-- Row 1 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#FFFFFF"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="118dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="133dp"
+                                app:srcCompat="@drawable/lawangsewu" />
+
+                            <Button
+                                android:id="@+id/button1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Lawang Sewu"
+                                app:backgroundTint="#E99859" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#FFFFFF"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="109dp"
+                                android:layout_height="135dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/kotalama" />
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Kota Lama"
+                                app:backgroundTint="#E99859" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Row 2 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#FFFFFF"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="118dp"
+                                android:layout_height="127dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/sampookong" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Sam Poo Kong"
+                                app:backgroundTint="#E99859" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#FFFFFF"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="125dp"
+                                android:layout_height="128dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/maerokoco" />
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Grand Maerakoco"
+                                app:backgroundTint="#E99859" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Row 2 -->
+
+                    <!-- Column 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:background="#FFFFFF"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="106dp"
+                                android:layout_height="123dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/semarangzoo" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Semarang Zoo"
+                                app:backgroundTint="#E99859" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Column 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:background="#FFFFFF"
+                        android:layout_columnWeight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="117dp"
+                                android:layout_height="124dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/saloka" />
+
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Saloka"
+                                app:backgroundTint="#E99859" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="79dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--Foto Profil-->
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/bottom_navigation_selector"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

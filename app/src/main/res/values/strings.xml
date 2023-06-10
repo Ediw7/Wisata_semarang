@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Semarang</string>
+    <string name="profile">Profile</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="location">Location</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="back"><![CDATA[<]]></string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/putih"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar">
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/back"
+                        android:textColor="#E99859"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        app:backgroundTint="#FFFF" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="133dp"
+                        app:srcCompat="@drawable/lawangsewu" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Lawang Sewu"
+                        app:backgroundTint="#E99859" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="135dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/kotalama" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Kota Lama"
+                        app:backgroundTint="#E99859" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="118dp"
+                        android:layout_height="127dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/sampookong" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sam Poo Kong"
+                        app:backgroundTint="#E99859" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="118dp"
+                        android:layout_height="127dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/maerokoco" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Grand Maerokoco"
+                        app:backgroundTint="#E99859" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/bottom_navigation_selector"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
